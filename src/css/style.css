@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(45deg, #0B60B0, black);
+    font-size: 24px;
+    color: #F0EDCF;
+  
+}
+header{
+    background-color: #0B60B0;
+    display: flex;
+    justify-content:start;
+    height: 40px;
+    padding-top: 15px;
+    gap: 200px;
+    border-bottom: 1px solid black;
+    margin-bottom: 40px;
+   
+}
+header div{
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+}
+a{
+    text-decoration: none;
+    color: #F0EDCF;
+}
+main{
+    text-align: center;
+}
+
+ul li img{
+    width: 30px;
+    height: auto;
+}
