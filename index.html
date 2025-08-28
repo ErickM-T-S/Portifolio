@@ -1,49 +1,69 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Meu Portifolio</title>
     <link rel="stylesheet" href="./src/css/style.css">
   
 </head>
 <body>
     <header>
-        <p>Dev. ErickM-T-S</p>
-        <div>
-            <a href="#sobre-mim">Sobre Mim</a>
-            <a href="#habilidades">Minhas Habilidades</a>
-            <a href="#projetos">Meus Projetos</a>
-        </div>
+        <nav>
+            <p>Dev. ErickM-T-S </p>
+            <div id="mobile-menu" onclick="mudarClasse()">
+                <div class="linha-1"></div>
+                <div class="linha-2"></div>
+                <div class="linha-2"></div>
+            </div>
+            <ul id="nav-list">
+            <li><a href="#sobre-mim">Sobre Mim</a></li>
+            <li><a href="#habilidades">Minhas Habilidades</a></li>
+            <li><a href="#projetos">Meus Projetos</a></li>
+            </ul>
+        </nav>
     </header>
     <main>
         <div id="sobre-mim">
             <h1>Sobre Mim</h1>
-            <img src="./src/img/imagemApresentação.png" alt="">
-            <p>Eu sou...</p>
-            <h2>Minhas redes</h2>
-            <ul>
-                <li><img src="./src/img/icons/icone-instagram.png" alt="Logo instagram"><a href="#">Meu instagram</a></li>
-                <li><img src="./src/img/icons/icone-github.png" alt="logo gitHub"><a href="#">Meu github</a></li>
-                <li><img src="./src/img/icons/icone-linkedin.png" alt="logo linkedin"><a href="#">Meu linkedin</a></li>
-            </ul>
+            <div class="apresentacao">
+                <img src="./src/img/imagemApresentação.png" alt="">
+                <p>Eu sou Erick Matheus, sou desenvolverdor web, focando em front-end, no momento estou iniciando, mas busco me especializar na área o quanto antes </p>
+            </div>
+            <div class="redes">
+                <h2>Minhas redes</h2>
+                <ul>
+                    <li><img src="./src/img/icons/icone-instagram.png" alt="Logo instagram"><a href="#">Meu instagram</a></li>
+                    <li><img src="./src/img/icons/icone-github.png" alt="logo gitHub"><a href="#">Meu github</a></li>
+                    <li><img src="./src/img/icons/icone-linkedin.png" alt="logo linkedin"><a href="#">Meu linkedin</a></li>
+                </ul>
+            </div>
         </div>
         <div id="habilidades">
             <h1>Minhas Habilidades</h1>
-            <ul>
-                <li><img src="./src/img/icons/icone-html.png" alt="logo HTML5">HTML5</li>
-                <li><img src="./src/img/icons/icone-css.png" alt="Logo CSS3">CSS3</li>
-                <li><img src="./src/img/icons/icone-javascript.png" alt="Logo JavaScript">javaScript</li>
-            </ul>
+                <p>Como desenvolvedor front-end tenho como principais habilidades o conhecimento das seguintes linguagens:</p>
+                <ul>
+                    <li><img src="./src/img/icons/icone-html.png" alt="logo HTML5">HTML5</li>
+                    <li><img src="./src/img/icons/icone-css.png" alt="Logo CSS3">CSS3</li>
+                    <li><img src="./src/img/icons/icone-javascript.png" alt="Logo JavaScript">javaScript</li>
+                </ul>
         </div>
 
 
         <div id="projetos">
             <h1>Meus Projetos</h1>
+            <p></p>
+            <section>
+                <img src="src/img/calculadora.png" alt="imagem projeto calculadora">
+                <span>Projeto de uma Calculadora funcional <a href="https://erickm-t-s.github.io/Calculadora/"> clique aqui para ver</a></span>
+            </section>
+            <section>
+                <img src="src/img/lista-de-tarefas.png" alt="imagem projeto lista de tarefas">
+                <span>Projeto de uma Lista de tarefas funcional <a href="https://erickm-t-s.github.io/lista-de-tarefas/"> clique aqui para ver</a></span>
+            </section>
         </div>
     </main>    
-    <footer>
 
-    </footer>
+    <script src="mobile-navbar.js"></script>
 </body>
 </html>
