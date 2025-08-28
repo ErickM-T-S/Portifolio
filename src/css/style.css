@@ -165,7 +165,7 @@ ul li img{
         position: absolute;
         top: 7.49vh;
         right: 0;
-        width: 40vw; 
+        width: 60vw; 
         border-bottom-left-radius: 10px;
         border-left: 1px solid black;
         border-bottom: 1px solid black;
@@ -200,4 +200,13 @@ ul li img{
     }
 
 
+}
+
+@media(min-width:1000px) {
+     #nav-list {
+        position: static;
+        transform: none;
+        width: auto;
+        flex-direction: row;
+    }
 }
