@@ -28,8 +28,6 @@ header{
     height: auto;
     padding-top: 15px;
     border-bottom: 1px solid black;  
-    
-
 }
 
 header nav {
@@ -161,32 +159,47 @@ ul li img{
 
     }
 
+@media (max-width: 999px) {
+ 
     #nav-list{
-        position: absolute;
-        top: 7.49vh;
-        right: 0;
-        width: 60vw; 
-        border-bottom-left-radius: 10px;
-        border-left: 1px solid black;
-        border-bottom: 1px solid black;
-        background: var(--dominante);
-        flex-direction: column;
-        transform: translateX(100%);
-        transition: transform 0.3s ease-in;
-    }
+    position: fixed;       
+    top: 0;                
+    right: 0;             
+    height: 25vh;         
+    width: 60vw;          
+    max-width: 320px;     
+    border-bottom-left-radius: 10px;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+    background: var(--dominante);
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    z-index: 9999;       
+    transform: translateX(100%); 
+    transition: transform .3s ease-in-out, opacity .25s .05s;
+    opacity: 0;
+    pointer-events: none;  
+  }
 
-    #nav-list li{
-        margin-left: 0;
-    }
+  #nav-list li {
+    margin-left: 0;
+    padding: 1.25rem;
+  }
 
-    #mobile-menu{
-        display: block;
-        cursor: pointer;
-    }
 
-    #nav-list.active{
-        transform: translateX(0);
-    }
+  #mobile-menu {
+    display: block;
+    cursor: pointer;
+    z-index: 10000; 
+  }
+
+ 
+  #nav-list.active {
+    transform: translateX(0); 
+    opacity: 1;
+    pointer-events: auto;
+  }
 
 }
 
@@ -205,6 +218,8 @@ ul li img{
 @media(min-width:1000px) {
      #nav-list {
         position: static;
+        opacity: 1;
+        pointer-events: auto;
         transform: none;
         width: auto;
         flex-direction: row;
