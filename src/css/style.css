@@ -6,13 +6,14 @@
 
 :root{
     --dominante:#021526;
-    --texto: #E2E2B6;
+    --texto: #EEEEEE;
     --detalhe-01:#03346E;
     --detalhe-02:#6EACDA;
+    --detalhe-03:#0B60B0;
 }
 
 body{
-    background: linear-gradient(180deg, var(--detalhe-01) 0%, var(--dominante) 25% );
+    background: linear-gradient(180deg, var(--detalhe-03) 0%, var(--dominante) 25% );
     font-size: 24px;
     color: var(--texto);
 
@@ -24,7 +25,7 @@ body{
 header{
     position: fixed;
     top: 0;
-    background-color: var(--dominante);
+    background-color: var(--detalhe-01);
     display: flex;
     width: 100%;
     height: auto;
